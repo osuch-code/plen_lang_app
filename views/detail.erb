@@ -1,0 +1,39 @@
+<% @rows.each  do  | row | %>
+<h5><%= "#{row["plencat"]}" %></h5>
+<% end %>
+
+<table style="xwidth:100%">
+  <thead>
+    <tr><td>English Word</td><td>Polish Word</td><td>Category</td></tr>
+  </thead>
+
+         <tr>
+            <% @rows.each  do  | row | %>
+         <!--We link to ENGLISH word whether English or Polish text-->
+            <td><%= "#{row["enword"]}" %></td>
+            <td><%= "#{row["plword"]}" %></td>
+            <td><%= "#{row["plencat"]}" %></td>
+          </tr>
+          <tr>
+            <td><img src="<%= "#{row["plenimage"]}" %>" alt="<%= "#{row["enword"]}" %>"/>
+            <td>
+            </tr>
+            <tr>
+           <td>	 <audio controls>
+  <source src="<%= "#{row["enaudio"]}" %>" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio> 
+<br /></td>
+<tr>
+  <td>
+    <audio controls>
+  <source src="<%= "#{row["plaudio"]}" %>" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio> 
+            </td>
+           
+          <% end %>
+
+</tr>
+
+</table>

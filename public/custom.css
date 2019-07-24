@@ -1,0 +1,59 @@
+/*Postgres PLEN Custom css*/
+
+body {
+	margin:15px;
+	padding:15px;
+	margin-top:0px;
+	padding-top:0px;
+}
+
+h1 {
+	font-size: 300%;
+	color: red;
+}
+
+h2{
+	font-size: 175%;
+}
+
+h3 {
+	font-size: 125%;
+	font-weight: bold;
+}
+
+.navbar li
+{
+	display: inline;
+	font-size:120%;
+	border-bottom: 1px dotted gray;
+	padding-bottom:5px;
+
+}
+
+a:hover {
+  text-decoration-line: underline;
+  color:red;
+}
+
+table
+{
+	width:100%;
+}
+
+tr td
+{
+	height:20px;
+	padding:10px;
+}
+div table tr td a
+
+{
+	font-size: 120%;
+}
+
+thead
+
+{
+	font-weight: bold;
+	font-size: 140%;
+}

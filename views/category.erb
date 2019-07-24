@@ -1,0 +1,19 @@
+<h5><%=@title%></h5>
+    <div>
+        <table>
+          <thead><tr>
+            <td>English</td><td>Polish</td>
+         </tr>
+         </thead>
+          <% @rows.each  do  | row | %>
+          <% @rows.count %>
+         <!--We link to ENGLISH word whether English or Polish text-->
+         <tr>
+            <td>
+              <a href="/<%= "#{row["plencat"]}" %>/<%= "#{row["enword"]}" %>"><%= "#{row["enword"]}" %></a></td><td>
+              <a href="/<%= "#{row["plencat"]}" %>/<%= "#{row["enword"]}" %>"><%= "#{row["plword"]}" %></a></td>
+         </tr>
+          <% end %>
+          <tr><td>Total words: <%= @rows.count %> </td></tr>
+        </table>
+    </div>
